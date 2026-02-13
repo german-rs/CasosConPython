@@ -1,8 +1,8 @@
 # Resumen Ejecutivo
 ## Análisis de Caso: Aplicación de NumPy en el Análisis de Datos Financieros
 
-**CURSO:** Análisis de datos
-**NOMBRE:** Germán Riveros
+**CURSO:** Análisis de datos  
+**NOMBRE:** Germán Riveros S.  
 **ARQUITECTURA:** Modular (datos → análisis → reportes)  
 **VERSIÓN:** 2.0  
 **FECHA:** Febrero 2026

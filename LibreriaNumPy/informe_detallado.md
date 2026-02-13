@@ -1,9 +1,9 @@
 # Informe Técnico Detallado
 ## Análisis de Caso: Aplicación de NumPy en el Análisis de Datos Financieros
 
-**CURSO:** Análisis de datos
-**NOMBRE:** Germán Riveros
-**TEMA:** Optimización del procesamiento de datos financieros con NumPy  
+**CURSO:** Análisis de datos.  
+**NOMBRE:** Germán Riveros S.  
+**TEMA:** Optimización del procesamiento de datos financieros con NumPy    
 **ARQUITECTURA:** Modular (datos, análisis, reportes)  
 **FECHA:** Febrero 2026  
 **VERSIÓN:** 2.0

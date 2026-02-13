@@ -1,7 +1,8 @@
 # Informe Técnico Detallado
 ## Análisis de Caso: Aplicación de NumPy en el Análisis de Datos Financieros
 
-**CURSO:** Análisis de datos  
+**CURSO:** Análisis de datos
+**NOMBRE:** Germán Riveros
 **TEMA:** Optimización del procesamiento de datos financieros con NumPy  
 **ARQUITECTURA:** Modular (datos, análisis, reportes)  
 **FECHA:** Febrero 2026  
@@ -896,6 +897,6 @@ Este enfoque establece una base sólida para sistemas de análisis financiero en
 
 ---
 
-**Elaborado por:** Germán Riveros 
+**Elaborado por:** Germán Riveros S. 
 **Fecha:** Febrero 2026  
 **Versión:** 2.0 (Arquitectura Modular)

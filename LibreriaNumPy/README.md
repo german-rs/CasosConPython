@@ -111,12 +111,12 @@ Ver [informe_detallado.md](https://github.com/german-rs/CasosConPython/blob/main
 - Análisis comparativo detallado
 - Mejores prácticas y optimizaciones
 
-Ver `resumen_ejecutivo.txt` para:
+Ver [resumen_ejecutivo.md](https://github.com/german-rs/CasosConPython/blob/main/LibreriaNumPy/resumen_ejecutivo.md) para:
 - Resultados clave
 - Impacto en el negocio
 - Recomendaciones
 
 ---
-
+**Elaborado por:** Germán Riveros S.
 **Última actualización:** Febrero 2026  
 **Versión:** 2.0 (Arquitectura Modular)

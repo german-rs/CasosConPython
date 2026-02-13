@@ -1,7 +1,7 @@
 from src.datos import generar_datos
 from src.analisis import (calcular_estadisticas, calcular_variaciones,
                           realizar_transformaciones, calcular_metricas_finales)
-from src.reportes import *  # Importamos todas las funciones de reporte
+from src.reportes import *  # Se importan todas las funciones de reporte
 import time
 import numpy as np
 

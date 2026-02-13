@@ -3,7 +3,7 @@ import numpy as np
 
 def imprimir_cabecera():
     print("=" * 80)
-    print("ANÁLISIS FINANCIERO CON NUMPY - Alkemy Caso de Estudio")
+    print("ANÁLISIS FINANCIERO CON NUMPY - Caso de Estudio")
     print("=" * 80)
 
 def imprimir_matriz_precios(nombres, dias, precios):

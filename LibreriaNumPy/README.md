@@ -9,15 +9,20 @@ el procesamiento de datos financieros en una empresa de análisis bursátil.
 
 ```
 .
-├── analisis_numpy_financiero.py   # Código principal ejecutable
-├── informe_detallado.txt          # Informe técnico completo
-├── resumen_ejecutivo.txt          # Resumen para stakeholders
-└── README.md                       # Este archivo
+├── Main.py                # Punto de entrada principal (ejecutable)
+├── src/                   # Código fuente modularizado
+│   ├── __init__.py        # Inicializador de paquete Python
+│   ├── datos.py           # Generación y simulación de datos financieros
+│   ├── analisis.py        # Lógica de cálculos y funciones NumPy
+│   └── reportes.py        # Funciones de visualización y reportes en consola
+├── informe_detallado.txt  # Informe técnico completo
+├── resumen_ejecutivo.txt  # Resumen para stakeholders
+└── README.md              # Este archivo
 ```
 
 ## 🚀 Requisitos
 
-- Python 3.8+
+- Python 3.13+
 - NumPy 1.20+
 
 ### Instalación
@@ -293,8 +298,8 @@ Este código es parte de un caso de estudio educativo para Alkemy.
 ## 📧 Contacto
 
 Para consultas sobre este análisis:
-- Equipo de Data Science
-- Email: data-team@empresa.com
+- Germán Riveros Sepúlveda
+- hola@germanriveros.cl
 
 ---
 

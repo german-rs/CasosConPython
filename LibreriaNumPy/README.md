@@ -105,7 +105,7 @@ main.py (Orquestador)
 
 ## 📖 Documentación Completa
 
-Ver `informe_detallado.txt` para:
+Ver `informe_detallado.md` para:
 - Explicación técnica de cada función
 - Justificación de decisiones de diseño
 - Análisis comparativo detallado

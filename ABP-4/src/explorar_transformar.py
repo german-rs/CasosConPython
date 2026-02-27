@@ -151,8 +151,9 @@ def mostrar_estadisticas(df: pd.DataFrame, nombre: str) -> None:
         print(f"\n  Estadísticas numéricas:")
         print(numericas.describe().round(2).to_string())
 
-    # Describe categórico / objeto
-    categoricas = df.select_dtypes(include=["object"])
+    # Describe categórico / string
+    # include=["object", "str"] cubre tanto pandas 2.x como 3.x/4.x
+    categoricas = df.select_dtypes(include=["object", "str"])
     if not categoricas.empty:
         print(f"\n  Estadísticas categóricas:")
         print(categoricas.describe().to_string())
@@ -229,12 +230,35 @@ def aplicar_filtros(
 
 
 # ===========================================================================
+# 3. GUARDAR DATAFRAMES EN CSV
+# ===========================================================================
+
+def guardar_dataframes(dataframes: dict) -> None:
+    """
+    Guarda cada DataFrame como CSV en data/.
+
+    Parámetros
+    ----------
+    dataframes : dict  – Diccionario {nombre_archivo: dataframe}.
+                         El nombre debe incluir la extensión .csv.
+    """
+    print(f"\n{'=' * 60}")
+    print("  3. Guardando DataFrames en CSV...")
+    print(f"{'=' * 60}\n")
+
+    for nombre, df in dataframes.items():
+        ruta = os.path.join(DIR_DATA, nombre)
+        df.to_csv(ruta, index=False, encoding="utf-8")
+        print(f"  ✔  {nombre:<45} ({df.shape[0]} filas × {df.shape[1]} cols)  →  {ruta}")
+
+
+# ===========================================================================
 # FUNCIÓN PRINCIPAL
 # ===========================================================================
 
 def explorar_datos() -> None:
     """
-    Orquesta la lectura, conversión y exploración de todos los datasets.
+    Orquesta la lectura, conversión, exploración y guardado de todos los datasets.
     """
 
     # ------------------------------------------------------------------
@@ -288,6 +312,17 @@ def explorar_datos() -> None:
     print("=" * 60)
 
     aplicar_filtros(df_clientes, df_ventas_2025, df_ventas_2026)
+
+    # ------------------------------------------------------------------
+    # 3. Guardar DataFrames en CSV
+    # ------------------------------------------------------------------
+    guardar_dataframes({
+        "df_clientes.csv":   df_clientes,
+        "df_productos.csv":  df_productos,
+        "df_categorias.csv": df_categorias,
+        "df_ventas_2025.csv": df_ventas_2025,
+        "df_ventas_2026.csv": df_ventas_2026,
+    })
 
 
 # ---------------------------------------------------------------------------
